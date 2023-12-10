@@ -1,0 +1,406 @@
+<!-- Assignment 3 -->
+<!-- Question 1 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <title>Pawesome</title>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css">
+    
+    <link rel="stylesheet" href="ThemeRoller.css">
+    <link rel="stylesheet" href="Assignment3Q1.css">
+  </head>
+
+  <body>
+    <div class="parent">
+      <!-- Blog page -->
+      <div class="pg" data-role="page" id="blog">
+        <header data-role="header">
+          <h1>Pawesome</h1>
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#blog" data-icon="grid" class="ui-btn-active ui-state-persist">Blog</a></li>
+              <li><a href="#petServices" data-icon="star">Pet Services</a></li>
+              <li><a href="#contactUs" data-icon="info">Contact Us</a></li>
+            </ul>
+          </div>
+        </header>
+
+        <section class="ui-content" role="main">
+          <div>
+            <h2>Do cats/dogs know their name?</h2>
+            <p class="blog">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim nunc leo. Mauris rhoncus molestie metus, vel eleifend eros condimentum nec. Fusce in lectus 
+              euismod, rutrum elit ac, imperdiet urna. Quisque non condimentum dolor. Donec feugiat vitae urna vitae viverra. Duis placerat magna a pharetra faucibus. Etiam aliquam, 
+              purus ac scelerisque fringilla, magna augue sagittis ipsum, pulvinar congue neque metus non mauris. Duis sed felis luctus, placerat leo id, cursus odio. Nulla sed 
+              efficitur risus, quis bibendum lectus. Cras congue tincidunt lectus sed laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis 
+              egestas.
+            </p>
+            <figure>
+              <picture>
+                <source media="(max-width: 749px)" srcset="catdog_50.jpg">
+                <source media="(min-width: 750px)" srcset="catdog.jpg">
+                <img src="catdog.jpg" alt="A dog and a cat laying on the grass">
+              </picture>
+              <figcaption>Photo by <a href="https://unsplash.com/@sita2?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andrew S</a> 
+                on <a href="https://unsplash.com/photos/a-dog-and-a-cat-laying-in-the-grass-ouo1hbizWwo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <h2>Essential tips to raise healthy pets</h2>
+            <p class="blog">
+              Proin consectetur odio sapien. Duis quis ex vel elit dictum posuere sit amet ac lacus. Vestibulum eu luctus turpis. Proin eget tellus in enim varius ullamcorper. Ut leo mi, 
+              egestas at pulvinar vitae, scelerisque rutrum magna. Sed in facilisis justo, quis dapibus sapien. Aliquam maximus luctus augue vitae vulputate. Fusce ornare augue 
+              interdum, gravida lacus nec, egestas purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </p>
+            <ol>
+              <li>Sed velit est, sodales in tortor vel, congue vestibulum enim. Ut mattis, ligula nec luctus pharetra, velit lorem aliquam ipsum, in porttitor elit nisi sollicitudin 
+                nunc. Mauris sapien dui, cursus et mollis eget, pretium non ligula. Cras a lorem erat.
+              </li>
+              <li>Donec arcu justo, vestibulum vitae aliquam non, congue porta ligula. Praesent auctor enim eu magna commodo sagittis in eget turpis.Fusce maximus nulla et erat commodo, 
+                id gravida nisi ullamcorper. Suspendisse nec odio faucibus, feugiat nibh vitae, convallis tortor. Suspendisse mollis dolor a fringilla ullamcorper.
+              </li>
+              <li>Duis lacinia nulla sed placerat eleifend. Vestibulum consectetur quam vitae turpis venenatis fringilla. Mauris vel ex eget erat vehicula malesuada eu non nulla.
+                Integer tincidunt metus a egestas accumsan. Sed ut magna porta, congue urna ac, euismod tellus. Nunc id ligula eget velit lobortis tincidunt id quis arcu.
+                Nunc eget urna ut odio hendrerit convallis et sit amet sem.
+              </li>
+              <li>Curabitur porta magna vitae iaculis viverra. Curabitur vel quam id sapien dignissim hendrerit. Duis auctor neque vestibulum risus vehicula, in feugiat nisi iaculis.
+                Aenean mattis nisi sit amet libero maximus eleifend.
+              </li>
+              <li>Proin fringilla quis risus eu tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac eros vitae nunc viverra elementum.
+                Praesent ut diam eget turpis aliquam interdum. Aenean sed dolor ut ante volutpat mollis. Sed nec nibh consectetur, tempus velit in, varius lectus.
+              </li>
+              <li>Quisque interdum tellus eget lobortis rutrum. Pellentesque commodo diam eu gravida accumsan. Integer in justo non erat elementum blandit nec sed dui.
+                Maecenas nec felis id mauris tristique accumsan eu in turpis.
+              </li>
+              <li>Vestibulum nulla ex, rutrum quis libero ac, dapibus interdum sapien. Sed in turpis egestas enim pellentesque luctus. Phasellus quis ante faucibus, suscipit sapien 
+                aliquam, rhoncus nisi.
+              </li>
+              <li>Sed molestie pellentesque volutpat. Nulla non lorem venenatis, volutpat nibh sit amet, feugiat sem. Aliquam semper magna a turpis rutrum, vel tempus erat eleifend.
+                Proin quis sem finibus, ornare massa at, congue lacus. Vestibulum fermentum nunc in justo fringilla, eget imperdiet sapien aliquet. Praesent vitae sapien id leo 
+                sollicitudin tristique.
+              </li>
+              <li>Nunc ac mi at urna finibus fermentum quis ut ex. Aliquam congue dui sed pharetra rutrum. Cras ut lorem condimentum, lacinia leo vitae, viverra est.
+                Sed hendrerit odio sed lacus tempus ultrices. Quisque non turpis efficitur, lobortis nunc sed, laoreet nunc.
+              </li>
+              <li>Curabitur pharetra odio at nibh lobortis, vitae tincidunt nisl congue. Morbi eu mi quis est dignissim maximus. Ut mattis sem laoreet, condimentum quam id, imperdiet 
+                augue. Cras eu augue tempus, commodo tortor a, fermentum nulla. Curabitur non nunc sollicitudin, auctor quam et, commodo mauris. Fusce tempus massa quis eros aliquam, 
+                ut laoreet risus interdum.
+              </li>
+            </ol>
+            <figure>
+              <picture>
+                <source media="(max-width: 749px)" srcset="healthydog_50.jpg">
+                <source media="(min-width: 750px)" srcset="healthydog.jpg">
+                <img src="healthydog.jpg" alt="A dog running on the grass under the sun">
+              </picture>
+              <figcaption>Photo by <a href="https://unsplash.com/@jesperados?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jesper Brouwers</a> 
+                on <a href="https://unsplash.com/photos/a-dog-jumping-in-the-air-G-vAvat-Cgs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <h2>Why does my cat/dog attack me?</h2>
+            <p class="blog">
+              Aliquam sapien nisl, pretium a vulputate quis, sollicitudin in risus. Quisque lobortis, enim vel accumsan rhoncus, dolor lacus faucibus tortor, sit amet ullamcorper 
+              justo nulla sed lacus. Integer interdum diam id orci vulputate imperdiet. Sed ac turpis vulputate nisl sollicitudin efficitur. Sed ut nisi ultricies turpis mattis dapibus 
+              vitae eu enim. Pellentesque in sollicitudin enim. Nulla facilisi. Suspendisse sodales convallis nulla ac pretium. In convallis porta erat, vitae varius augue auctor nec. 
+              Etiam bibendum tristique ex vel mollis. Suspendisse euismod malesuada augue, in finibus ante venenatis vel. Vestibulum ante ipsum primis in faucibus orci luctus et 
+              ultrices posuere cubilia curae; Curabitur in convallis velit, in volutpat odio. Duis cursus mauris sit amet bibendum suscipit. Mauris ante felis, ullamcorper quis 
+              velit quis, dictum placerat felis. Sed suscipit diam odio, et dignissim sem tristique fermentum.
+            </p>
+            <figure>
+              <picture>
+                <source media="(max-width: 749px)" srcset="dogplay_50.jpg">
+                <source media="(min-width: 750px)" srcset="dogplay.jpg">
+                <img src="dogplay.jpg" alt="Two dogs playing on the grass">
+              </picture>
+              <figcaption>Photo by <a href="https://unsplash.com/@invisibleman_photography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">David Taffet</a> 
+                on <a href="https://unsplash.com/photos/two-short-coated-brown-and-black-dogs-playing-5gXPapBz40c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <h2>How to throw a birthday party for your cat/dog</h2>
+            <p class="blog">
+              Proin consectetur odio sapien. Duis quis ex vel elit dictum posuere sit amet ac lacus. Vestibulum eu luctus turpis. Proin eget tellus in enim varius ullamcorper. Ut 
+              leo mi, egestas at pulvinar vitae, scelerisque rutrum magna. Sed in facilisis justo, quis dapibus sapien. Aliquam maximus luctus augue vitae vulputate. Fusce ornare 
+              augue interdum, gravida lacus nec, egestas purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            </p>
+            <ol>
+              <li>Sed velit est, sodales in tortor vel, congue vestibulum enim. Duis vestibulum mauris sed nibh fermentum rutrum. Suspendisse sed lectus et dui ultricies lacinia.
+                Vestibulum at odio in purus interdum accumsan pharetra a enim. Nam cursus lectus sed mauris tempor, sit amet venenatis ante ultrices.
+              </li>
+              <li>Donec arcu justo, vestibulum vitae aliquam non, congue porta ligula. In tincidunt sapien vel elit iaculis, vel ullamcorper nisi varius. Duis vehicula lacus id dictum 
+                ullamcorper. Suspendisse rhoncus erat sed sapien eleifend commodo. Integer vitae nisi tempor, laoreet nibh eu, porttitor magna.
+              </li>
+              <li>Duis lacinia nulla sed placerat eleifend. Nullam dictum nulla vestibulum turpis pulvinar, sit amet sollicitudin lacus accumsan. Mauris at sapien ut lectus malesuada 
+                maximus. Mauris at mauris quis ante viverra condimentum. Nam sed nibh posuere, sagittis nulla in, porttitor est. Donec nec dui non mi lacinia vulputate in et magna.
+              </li>
+              <li>Curabitur porta magna vitae iaculis viverra. Duis bibendum eros a nisl pulvinar, vitae fermentum odio accumsan. Morbi rhoncus quam euismod, ultricies augue ultricies, 
+                accumsan quam. Donec eget nisi id sem rutrum finibus vitae non erat.
+              </li>
+              <li>Proin fringilla quis risus eu tristique. Nullam porta augue at mattis pretium. Etiam placerat magna nec nisi scelerisque ornare. Nam porttitor neque vitae odio 
+                pretium, id ornare nibh laoreet. Curabitur in ante in nisl ultrices mollis at vitae libero.
+              </li>
+              <li>Quisque interdum tellus eget lobortis rutrum. Phasellus finibus lectus non ultricies hendrerit. Duis non odio quis nunc ultricies dictum in vel massa. Duis vel orci 
+                varius, consequat justo eget, tempus quam.
+              </li>
+              <li>Vestibulum nulla ex, rutrum quis libero ac, dapibus interdum sapien. Cras efficitur tellus nec pretium auctor. Aenean laoreet ligula ac malesuada faucibus.
+              </li>
+              <li>Sed molestie pellentesque volutpat. Aenean quis lorem aliquam, aliquet ligula in, lobortis massa. Vivamus pellentesque orci et aliquam convallis.
+              </li>
+              <li>Nunc ac mi at urna finibus fermentum quis ut ex. Sed in turpis egestas enim pellentesque luctus. Phasellus quis ante faucibus, suscipit sapien aliquam, rhoncus nisi.
+              </li>
+              <li>Curabitur pharetra odio at nibh lobortis, vitae tincidunt nisl congue. Donec sed lacus porta, dictum justo et, scelerisque erat. Duis at tellus sit amet nulla blandit 
+                posuere.
+              </li>
+            </ol>
+            <figure>
+              <picture>
+                <source media="(max-width: 749px)" srcset="catbirthday_50.jpg">
+                <source media="(min-width: 750px)" srcset="catbirthday.jpg">
+                <img src="catbirthday.jpg" alt="A cat sitting on the couch next to its birthday cake">
+              </picture>
+              <figcaption>Photo by <a href="https://unsplash.com/@asalmashkoori?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Asal Mshk</a> 
+                on <a href="https://unsplash.com/photos/a-cat-sitting-on-a-couch-next-to-a-cake-8tWsZHubj2c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <footer data-role="footer"><h4>Krisanne Apostol &copy; 2023</h4></footer>
+      </div>
+
+      <!-- Pet Services page -->
+      <div class="pg" data-role="page" id="petServices">
+        <header data-role="header">
+          <h1>Pawesome</h1>
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#blog" data-icon="grid">Blog</a></li>
+              <li><a href="#petServices" data-icon="star" class="ui-btn-active ui-state-persist">Pet Services</a></li>
+              <li><a href="#contactUs" data-icon="info">Contact Us</a></li>
+            </ul>
+          </div>
+        </header>
+
+        <section class="ui-content" role="main">
+          <div class="ui-grid-a">
+            <h2>Grooming</h2>
+
+            <div class="ui-block-a">
+              <h3>Base</h3>
+              <p class="petServices">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis justo in lectus ornare, id euismod est auctor. Phasellus venenatis neque velit, vitae viverra 
+                lectus auctor ac. Curabitur pulvinar ex ac tortor tempus, ac venenatis ipsum placerat. Etiam vitae lacinia dui. Maecenas at consectetur mi, id vestibulum sapien. Nunc 
+                eget arcu sem. Aliquam congue dapibus urna, a egestas ipsum maximus sed. Nam luctus ornare nisl, iaculis ultricies nunc ornare a. Aenean dictum urna nec porttitor 
+                sagittis. Suspendisse id turpis sed sapien iaculis mollis. Praesent sodales leo leo, a euismod ex bibendum in. Phasellus eu risus eu felis laoreet finibus eu id arcu. 
+                Nullam ac dolor ex.
+              </p>
+            </div>
+
+            <div class="ui-block-b">
+              <h3>Premium</h3>
+              <p class="petServices">
+                Nulla facilisi. Integer in rutrum urna. Nunc ultricies turpis sed orci tempor pretium. Suspendisse vitae dolor scelerisque, ultricies dolor a, venenatis orci. Orci 
+                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque lacinia ligula odio. Curabitur vitae pretium velit. Mauris lacinia 
+                mollis egestas. Ut in auctor erat. Nam consequat velit sagittis magna iaculis scelerisque. Vestibulum finibus, mauris vitae sodales dignissim, risus felis sodales 
+                sapien, nec bibendum eros nibh eget sapien. Suspendisse tortor nunc, vulputate nec massa ac, vestibulum tempor massa. Praesent eu vestibulum mauris. Donec auctor 
+                fringilla risus, ac tincidunt enim.
+              </p>
+            </div>
+
+            <figure>
+              <picture>
+                <source media="(max-width: 749px)" srcset="groomingdog_50.jpg">
+                <source media="(min-width: 750px)" srcset="groomingdog.jpg">
+                <img src="groomingdog.jpg" alt="A dog getting groomed">
+              </picture>
+              <figcaption>Photo by <a href="https://unsplash.com/@benjaminlehman?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">benjamin lehman</a> 
+                on <a href="https://unsplash.com/photos/brown-long-coated-small-dog-qwIeh5M8bF8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <h2>Pets Hotel</h2>
+
+            <div data-role="collapsible">
+              <h3>Standard</h3>
+              <figure>
+                <picture>
+                  <source media="(max-width: 749px)" srcset="catoncouch_50.jpg">
+                  <source media="(min-width: 750px)" srcset="catoncouch.jpg">
+                  <img src="catoncouch.jpg" alt="A cat sleeping on a couch">
+                </picture>
+                <figcaption>Photo by <a href="https://unsplash.com/@elisalou?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Elisa Kennemer</a> 
+                  on <a href="https://unsplash.com/photos/brown-tabby-cat-lying-on-brown-wooden-floor-U74i4h5Z_U0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </figcaption>
+              </figure>
+              <p>
+                Ut blandit ligula lobortis velit gravida sollicitudin. Duis lacinia augue et vehicula sagittis. In hac habitasse platea dictumst. Donec laoreet leo lacus, ut 
+                sollicitudin dolor luctus id. Sed sodales malesuada ultrices. Duis ante metus, posuere nec lectus eu, fermentum tincidunt nulla. Ut et lectus vel justo accumsan 
+                imperdiet. Donec cursus auctor vestibulum. Integer non elit eleifend, semper dui sit amet, viverra orci. Aenean a diam sit amet mauris venenatis imperdiet. Cras 
+                eleifend urna non dolor convallis, ac consequat lectus volutpat. Nulla interdum ligula ac tincidunt vestibulum. Nam commodo ac risus vel pretium. Cras consequat 
+                cursus volutpat.
+              </p>
+            </div>
+
+            <div data-role="collapsible">
+              <h3>Deluxe</h3>
+              <figure>
+                <picture>
+                  <source media="(max-width: 749px)" srcset="dogsleeping_50.jpg">
+                  <source media="(min-width: 750px)" srcset="dogsleeping.jpg">
+                  <img src="dogsleeping.jpg" alt="A dog sleeping on a dog bed">
+                </picture>
+                <figcaption>Photo by <a href="https://unsplash.com/@dexezekiel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dex Ezekiel</a> 
+                  on <a href="https://unsplash.com/photos/brown-and-black-german-shepherd-lying-on-white-textile-5RAlU1pjNio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </figcaption>
+              </figure>
+              <p>
+                Donec vitae porta nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut feugiat tortor a lacus dapibus, at vestibulum 
+                odio gravida. Maecenas magna elit, molestie eu enim eu, mattis pharetra metus. Phasellus nec eros lectus. Phasellus in mattis augue. Ut enim est, viverra eget 
+                scelerisque vitae, scelerisque a nulla. Sed ornare, nisl a luctus consequat, lectus sem vulputate mauris, non sagittis libero arcu sed quam. Morbi sollicitudin 
+                hendrerit dui eget bibendum. Pellentesque lacinia in nunc at consequat.
+              </p>
+            </div>
+
+            <div data-role="collapsible">
+              <h3>Private Suite</h3>
+              <figure>
+                <picture>
+                  <source media="(max-width: 749px)" srcset="catsleeping_50.jpg">
+                  <source media="(min-width: 750px)" srcset="catsleeping.jpg">
+                  <img src="catsleeping.jpg" alt="A cat sleeping on a bed">
+                </picture>
+                <figcaption>Photo by <a href="https://unsplash.com/@allexx54?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alexander Possingham</a> 
+                  on <a href="https://unsplash.com/photos/russian-blue-cat-sleeping-on-whit-textile-CeWNEEsHPbA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </figcaption>
+              </figure>
+              <p>
+                Aenean rutrum, justo egestas vestibulum fringilla, ante dui vestibulum sem, sollicitudin mollis urna purus in metus. Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit. Ut vel ultricies est. Suspendisse vulputate nunc vitae dolor mollis, vitae consectetur sapien venenatis. Fusce eu turpis in ex elementum malesuada. 
+                Quisque lacinia, nunc ut facilisis pellentesque, mi dolor aliquet ipsum, nec tempor justo eros nec est. Fusce placerat dolor sed vestibulum laoreet. Proin mattis 
+                mauris id magna lobortis interdum. Etiam a metus est. Suspendisse potenti.
+              </p>
+            </div>
+          </div>
+
+          <div data-role="collapsible-set">
+            <h2>Pet Day Camp</h2>
+
+            <div data-role="collapsible">
+              <h3>Full Day</h3>
+              <figure>
+                <picture>
+                  <source media="(max-width: 749px)" srcset="dogsrunning_50.jpg">
+                  <source media="(min-width: 750px)" srcset="dogsrunning.jpg">
+                  <img src="dogsrunning.jpg" alt="Two dogs playing fetch with a ball">
+                </picture>
+                <figcaption>Photo by <a href="https://unsplash.com/@miaanderson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mia Anderson</a> 
+                  on <a href="https://unsplash.com/photos/brown-long-coated-small-dog-on-green-grass-field-during-daytime-2k6v10Y2dIg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </figcaption>
+              </figure>
+              <p>
+                Ut blandit ligula lobortis velit gravida sollicitudin. Duis lacinia augue et vehicula sagittis. In hac habitasse platea dictumst. Donec laoreet leo lacus, ut 
+                sollicitudin dolor luctus id. Sed sodales malesuada ultrices. Duis ante metus, posuere nec lectus eu, fermentum tincidunt nulla. Ut et lectus vel justo accumsan 
+                imperdiet. Donec cursus auctor vestibulum. Integer non elit eleifend, semper dui sit amet, viverra orci. Aenean a diam sit amet mauris venenatis imperdiet. Cras 
+                eleifend urna non dolor convallis, ac consequat lectus volutpat. Nulla interdum ligula ac tincidunt vestibulum. Nam commodo ac risus vel pretium. Cras consequat 
+                cursus volutpat.
+              </p>
+            </div>
+
+            <div data-role="collapsible">
+              <h3>Half Day</h3>
+              <figure>
+                <picture>
+                  <source media="(max-width: 749px)" srcset="dogsexploring_50.jpg">
+                  <source media="(min-width: 750px)" srcset="dogsexploring.jpg">
+                  <img src="dogsexploring.jpg" alt="Two dogs exploring on a dirt road">
+                </picture>
+                <figcaption>Photo by <a href="https://unsplash.com/@alvannee?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alvan Nee</a> 
+                  on <a href="https://unsplash.com/photos/two-brown-and-white-dogs-running-dirt-road-during-daytime-T-0EW-SEbsE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </figcaption>
+              </figure>
+              <p>
+                Donec vitae porta nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut feugiat tortor a lacus dapibus, at vestibulum 
+                odio gravida. Maecenas magna elit, molestie eu enim eu, mattis pharetra metus. Phasellus nec eros lectus. Phasellus in mattis augue. Ut enim est, viverra eget 
+                scelerisque vitae, scelerisque a nulla. Sed ornare, nisl a luctus consequat, lectus sem vulputate mauris, non sagittis libero arcu sed quam. Morbi sollicitudin 
+                hendrerit dui eget bibendum. Pellentesque lacinia in nunc at consequat.
+              </p>
+            </div>
+
+            <div data-role="collapsible">
+              <h3>Weekend</h3>
+              <figure>
+                <picture>
+                  <source media="(max-width: 749px)" srcset="catanddog_50.jpg">
+                  <source media="(min-width: 750px)" srcset="catanddog.jpg">
+                  <img src="catanddog.jpg" alt="A cat looking at a dog">
+                </picture>
+                <figcaption>Photo by <a href="https://unsplash.com/@anushabarwa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Anusha Barwa</a> 
+                  on <a href="https://unsplash.com/photos/shallow-focus-photography-of-dog-and-cat-ppKcYi1CXcI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </figcaption>
+              </figure>
+              <p>
+                Aenean rutrum, justo egestas vestibulum fringilla, ante dui vestibulum sem, sollicitudin mollis urna purus in metus. Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit. Ut vel ultricies est. Suspendisse vulputate nunc vitae dolor mollis, vitae consectetur sapien venenatis. Fusce eu turpis in ex elementum malesuada. 
+                Quisque lacinia, nunc ut facilisis pellentesque, mi dolor aliquet ipsum, nec tempor justo eros nec est. Fusce placerat dolor sed vestibulum laoreet. Proin mattis 
+                mauris id magna lobortis interdum. Etiam a metus est. Suspendisse potenti.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <footer data-role="footer"><h4>Krisanne Apostol &copy; 2023</h4></footer>
+      </div>
+
+      <!-- Contact Us page -->
+      <div class="pg" data-role="page" id="contactUs">
+        <header data-role="header">
+          <h1>Pawesome</h1>
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#blog" data-icon="grid">Blog</a></li>
+              <li><a href="#petServices" data-icon="star">Pet Services</a></li>
+              <li><a href="#contactUs" data-icon="info" class="ui-btn-active ui-state-persist">Contact Us</a></li>
+            </ul>
+          </div>
+        </header>
+
+        <section class="ui-content" role="main">
+          <h2>Contact Us</h2>
+
+          <h4>Email</h4>
+          <p class="contact"><a href="mailto:contactpawesome@gmail.com">contactpawesome@gmail.com</a></p>
+
+          <h4>Address</h4>
+          <p class="contact">Red Deer Polytechnic<br>100 College Blvd.<br>Red Deer, AB T4N 5H5</p>
+          <center>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.8198884664816!2d-113.82743132363728!3d52.2466550564316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537456a4e720485b%3A0xfad570c5678b03ce!2sRed%20Deer%20Polytechnic!5e0!3m2!1sen!2sca!4v1702183140403!5m2!1sen!2sca" 
+              id="map" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </center>
+
+          <h4>Phone</h4>
+          <p class="contact"><a href="tel:444-444-4444" class="contactdetails">444-444-4444</a></p>
+
+          <a href="#" id="back" data-role="button" data-rel="back" data-icon="back">Back to previous page</a>
+        </section>
+
+        <footer data-role="footer"><h4>Krisanne Apostol &copy; 2023</h4></footer>
+      </div>
+    </div>
+  </body>
+</html>
